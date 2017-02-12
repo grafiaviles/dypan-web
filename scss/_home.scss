@@ -5,6 +5,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    background-color: $color-cool;
     min-height: 100vh;
     margin: auto;
     position: relative;
@@ -19,6 +20,8 @@
     min-height: 100vh;
     background-color:transparent;
     position: absolute;
+    top: calc(50% - 50%);
+    top: -webkit-calc(50% - 50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +59,7 @@
             font-size: 12px;
             text-transform: uppercase;
             font-weight: bold;
-            letter-spacing: 5px;
+            letter-spacing: 10px;
             color: $white;
             line-height: 20px;
         }
@@ -80,6 +83,7 @@
                 font-weight: 400;
                 position: relative;
                 margin-top: 25px;
+                text-align: left;
             }
         }
         & .botones {
@@ -112,6 +116,8 @@
                     margin-bottom: 10px;
                     left: -webkit-calc(50% - 45px);
                     top: -webkit-calc(50% - 45px);
+                    left: calc(50% - 45px);
+                    top: calc(50% - 45px);
                     opacity: 0;
                     z-index: 10;
                     transition: all .4s ease;
@@ -123,7 +129,7 @@
                     background-color: white;
                     font-size: 1em;
                     font-weight: bold;
-                    letter-spacing: 1px;
+                    
                     line-height: 45px;
                     border-radius: 5px;
                     transition: all .4s ease;
@@ -155,11 +161,106 @@
 
 
 
-
-
-
-
+// CONTENIDO CONTACTO
 .container-full-2 {
-    background-color: $color-darken;
-    min-height: 100vh;
+    @extend .container-full;
+    background-image: none;
+    background-color: white;    
+    
+        & .contenido-form {
+	        background-color: white;
+            width: $width;
+            max-width: 700px;
+            height: 350px;
+            position: absolute;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 10px 50px -30px rgba(0,0,0,.5);
+            left: -webkit-calc(50% - 350px);
+            top: -webkit-calc(50% - 200px);
+            left: calc(50% - 350px);
+            top: calc(50% - 175px);
+            & .cont-izq {
+                width: 50%;
+                background-image: url(../img/bg-icon-white.svg);
+                background-repeat: repeat;
+                background-size: cover;
+                background-color: rgba(162, 198, 72, 0.02);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                & figure {
+                    width: 100%;
+                    position: relative;
+                    margin: auto;
+                    & img {
+                        width: 250px;
+                        margin: auto;
+                    }
+                }
+            }
+            // FORMULARIO
+            & .cont-der {
+                @extend .cont-izq;
+                background-image: none;
+                background-color: white;
+                & .form-home {
+                    width: $width;
+                    flex-direction: column;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    padding: 35px;
+                    height: 100%;
+                    & .errores {
+                        position: absolute;
+                        right: -50px;
+                        display: none;
+                    }
+                    & input[class="campo"]{
+                        width: $width;
+                        outline: none;
+                        line-height: 35px;
+                        margin-bottom: 10px;
+                        font-size: .9em;
+                        color: #777;
+                        border: none;
+                        box-shadow: 0 1px 0 #dddddd;
+                    }
+                    & textarea[class="campo-commit"] {
+                        width: $width;
+                    }
+                   
+                }
+            }
+        }
+        & #canvas_maps {
+            width: 100%;
+            opacity: .2;
+            & #map {
+                height: 100vh;
+                width: 100%;
+              }
+        }    
 }
+.scrolloff {
+pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

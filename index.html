@@ -81,27 +81,24 @@
     ga('create', 'UA-68129032-1', 'auto');
     ga('send', 'pageview');
     </script>
-                
+
 </head>
-    
     
 <body>
    
-   
     <section class="container-full">
-      
         <!--Lineas Corchetes-->
         <div class="lines">  
             <div class="line-izq"></div>
             <div class="line-der"></div>
         </div>
-       
         <!--Contenido-->
         <section class="content-cover">
-            <article class="item-cover welcome"><h2>Próximamente Portafolio Digital</h2></article>
+            <article class="item-cover welcome"><h2>Próximamente Portafolio</h2></article>
             <a href="index.html" class="item-cover logotipo">
                 <img src="img/logotipo-dypan.svg" alt="Logotipo Dypan">
-                <p>Frontend <strong>Designer</strong></p>
+                <p><strong>César Avilés C.</strong><br>Frontend Designer</p>
+                
             </a>
             <article class="item-cover botones">
                <div class="item-btn">
@@ -123,26 +120,60 @@
                </div>
             </article>
         </section>
+        <!--Contenido-->
+    </section>
+   
+      
+       
                    
         
-    </section>
     
-    
-    
-    
-    
-    
+     <!--Contacto--> 
     <section class="container-full-2">
-        
-        <div class="contenido"></div>
-        
+      
+       <!--formulario-->        
+       <section class="contenido-form">
+               <arcticle class="cont-izq">
+               <figure><img src="img/icon-trabajemos.svg" alt="Dypan Trabajemos"></figure>
+               </arcticle>
+               
+               <arcticle class="cont-der">
+                   <form action="" method="post" id="myForm" autocomplete="off" class="form-home">
+                     <input type="text" name="nombre" id="nombre" class="campo" maxlength="50" placeholder="Nombre y Apellido">
+                         <div id="mensaje1" class="errores"><p>Ingresa tu nombre y apellido</p></div>
+                         
+                     <input type="email" name="email" id="email" class="campo" maxlength="50" placeholder="Email">
+                         <div id="mensaje2" class="errores"><p>Ingresa un email válido</p></div>
+                         
+                     <input type="text" name="ubicacion" id="ubicacion" class="campo" maxlength="100" placeholder="Ubicación">
+                         <div id="mensaje3" class="errores"><p>Ingresa tu ubicación</p></div>
+                         
+                     <textarea type="text" name="mensaje" id="mensaje" class="campo-commit" placeholder="Mensaje" rows="3"></textarea>
+                         <div id="mensaje4" class="errores"><p>Escribe tu comentario</p></div>
+                         
+                     <input type="submit" name="btn-enviar" id="btn-enviar" class="btn-enviar" value="Enviar Solicitud">
+                   </form>
+               </arcticle>
+       </section>
+       
+       <!--Mapa Google-->
+       <section id="canvas_maps">
+           <div id="map"></div>
+       </section>
+               
     </section>
     
     
     
-    <!--Javascript-->
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-	<script src="js/paralax-home.js"></script>
+<!--Javascript-->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="js/paralax-home.js"></script>
+<script src="js/maps-google.js"></script>
+<!-- Google Maps Conexión API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAjPo2lAJgm-_vUYhc8kzmYIygvwSfAnE&callback=initMap"
+        async defer>
+</script>
+
 </body>
     
 </html>
