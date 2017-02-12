@@ -171,7 +171,7 @@
 	        background-color: white;
             width: $width;
             max-width: 700px;
-            height: 350px;
+            height: 380px;
             position: absolute;
             z-index: 10;
             display: flex;
@@ -180,9 +180,9 @@
             border-radius: 5px;
             box-shadow: 0 10px 50px -30px rgba(0,0,0,.5);
             left: -webkit-calc(50% - 350px);
-            top: -webkit-calc(50% - 200px);
+            top: -webkit-calc(50% - 190px);
             left: calc(50% - 350px);
-            top: calc(50% - 175px);
+            top: calc(50% - 190px);
             & .cont-izq {
                 width: 50%;
                 background-image: url(../img/bg-icon-white.svg);
@@ -215,11 +215,37 @@
                     justify-content: space-around;
                     align-items: flex-start;
                     padding: 35px;
-                    height: 100%;
+                    position: relative;                    
                     & .errores {
                         position: absolute;
-                        right: -50px;
-                        display: none;
+                        background-color: $color-darken;
+                        margin-top: -65px;
+                        margin-left: 300px;
+                        padding: 0 20px;
+                        font-size: .9em;
+                        border-radius: 5px;
+                        width: 100%;
+                        max-width: 230px;
+                        & p {
+                        text-align: left;
+                        line-height: 35px;
+                        color: white;
+                        font-weight: bold;
+                        }
+                    }
+                    & .errores:before {
+                        content: "";
+                        border-color: transparent $color-darken transparent transparent ;
+                        border-style: solid;
+                        border-width: 5px 5px 5px 0;
+                        left: -5px;
+                        position: absolute;
+                        top: -webkit-calc(50% - 5px);
+                        top: calc(50% - 5px);
+                    }
+                    & .errores-commit {
+                        @extend .errores;
+                        bottom: 125px;
                     }
                     & input[class="campo"]{
                         width: $width;
@@ -230,11 +256,43 @@
                         color: #777;
                         border: none;
                         box-shadow: 0 1px 0 #dddddd;
+                        position: relative;
+                        transition: all .4s ease-in-out;
+                    }
+                    & input[class="campo"]:hover, & input[class="campo"]:focus {
+                        box-shadow: 0 1px 0 $color-cool;
+                        padding-left: 10px;
+                        
                     }
                     & textarea[class="campo-commit"] {
-                        width: $width;
+                        @extend input[class="campo"];
+                        line-height: normal;
+                        max-width: 100%;
+                        min-width: 100%;
+                        min-height: 60px;
+                        max-height: 250px;
                     }
-                   
+                    & input[class="btn-enviar"]{
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        color: white;
+                        background-color: $color-full;
+                        line-height: 40px;
+                        font-size: .9em;
+                        font-weight: bold;
+                        padding: 0 20px;
+                        border-radius: 5px;
+                        position: relative;
+                        transition: all .4s ease-in-out;
+                        display: block;
+                        box-shadow: 0 0 0 transparent inset;
+                        width: 50%;
+                    }
+                    & input[class="btn-enviar"]:hover, & input[class="btn-enviar"]:focus {
+                        box-shadow: 200px 0 0 $color-cool inset;
+                    }
+  
                 }
             }
         }
@@ -247,10 +305,35 @@
               }
         }    
 }
+
+
+
+
+
+
+
+// Otros
 .scrolloff {
 pointer-events: none;
 }
-
+*::-webkit-input-placeholder {
+    color: rgba(102, 102, 102, 0.5);
+}
+:-moz-input-placeholder {
+    color: rgba(102, 102, 102, 0.5);
+}
+:-moz-placeholder {
+    color: rgba(102, 102, 102, 0.5);
+}
+::-moz-placeholder {
+    color: rgba(102, 102, 102, 0.5);
+}
+:-ms-input-placeholder {
+    color: rgba(102, 102, 102, 0.5);
+}
+::-ms-input-placeholder {
+    color: rgba(102, 102, 102, 0.5);
+}
 
 
 

@@ -162,7 +162,7 @@
     background-color: white;
     width: 100%;
     max-width: 700px;
-    height: 350px;
+    height: 380px;
     position: absolute;
     z-index: 10;
     display: flex;
@@ -171,9 +171,9 @@
     border-radius: 5px;
     box-shadow: 0 10px 50px -30px rgba(0, 0, 0, 0.5);
     left: -webkit-calc(50% - 350px);
-    top: -webkit-calc(50% - 200px);
+    top: -webkit-calc(50% - 190px);
     left: calc(50% - 350px);
-    top: calc(50% - 175px); }
+    top: calc(50% - 190px); }
     /* line 186, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
     .container-full-2 .contenido-form .cont-izq, .container-full-2 .contenido-form .cont-der {
       width: 50%;
@@ -206,14 +206,39 @@
         justify-content: space-around;
         align-items: flex-start;
         padding: 35px;
-        height: 100%; }
+        position: relative; }
         /* line 219, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
-        .container-full-2 .contenido-form .cont-der .form-home .errores {
+        .container-full-2 .contenido-form .cont-der .form-home .errores, .container-full-2 .contenido-form .cont-der .form-home .errores-commit {
           position: absolute;
-          right: -50px;
-          display: none; }
-        /* line 224, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
-        .container-full-2 .contenido-form .cont-der .form-home input[class="campo"] {
+          background-color: #282828;
+          margin-top: -65px;
+          margin-left: 300px;
+          padding: 0 20px;
+          font-size: .9em;
+          border-radius: 5px;
+          width: 100%;
+          max-width: 230px; }
+          /* line 229, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+          .container-full-2 .contenido-form .cont-der .form-home .errores p, .container-full-2 .contenido-form .cont-der .form-home .errores-commit p {
+            text-align: left;
+            line-height: 35px;
+            color: white;
+            font-weight: bold; }
+        /* line 236, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        .container-full-2 .contenido-form .cont-der .form-home .errores:before, .container-full-2 .contenido-form .cont-der .form-home .errores-commit:before {
+          content: "";
+          border-color: transparent #282828 transparent transparent;
+          border-style: solid;
+          border-width: 5px 5px 5px 0;
+          left: -5px;
+          position: absolute;
+          top: -webkit-calc(50% - 5px);
+          top: calc(50% - 5px); }
+        /* line 246, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        .container-full-2 .contenido-form .cont-der .form-home .errores-commit {
+          bottom: 125px; }
+        /* line 250, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        .container-full-2 .contenido-form .cont-der .form-home input[class="campo"], .container-full-2 .contenido-form .cont-der .form-home textarea[class="campo-commit"] {
           width: 100%;
           outline: none;
           line-height: 35px;
@@ -221,22 +246,76 @@
           font-size: .9em;
           color: #777;
           border: none;
-          box-shadow: 0 1px 0 #dddddd; }
-        /* line 234, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+          box-shadow: 0 1px 0 #dddddd;
+          position: relative;
+          transition: all .4s ease-in-out; }
+        /* line 262, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        .container-full-2 .contenido-form .cont-der .form-home input[class="campo"]:hover, .container-full-2 .contenido-form .cont-der .form-home textarea[class="campo-commit"]:hover, .container-full-2 .contenido-form .cont-der .form-home input[class="campo"]:focus, .container-full-2 .contenido-form .cont-der .form-home textarea[class="campo-commit"]:focus {
+          box-shadow: 0 1px 0 #93c95b;
+          padding-left: 10px; }
+        /* line 267, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
         .container-full-2 .contenido-form .cont-der .form-home textarea[class="campo-commit"] {
-          width: 100%; }
-  /* line 241, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+          line-height: normal;
+          max-width: 100%;
+          min-width: 100%;
+          min-height: 60px;
+          max-height: 250px; }
+        /* line 275, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        .container-full-2 .contenido-form .cont-der .form-home input[class="btn-enviar"] {
+          border: none;
+          outline: none;
+          cursor: pointer;
+          color: white;
+          background-color: #5575f5;
+          line-height: 40px;
+          font-size: .9em;
+          font-weight: bold;
+          padding: 0 20px;
+          border-radius: 5px;
+          position: relative;
+          transition: all .4s ease-in-out;
+          display: block;
+          box-shadow: 0 0 0 transparent inset;
+          width: 50%; }
+        /* line 292, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        .container-full-2 .contenido-form .cont-der .form-home input[class="btn-enviar"]:hover, .container-full-2 .contenido-form .cont-der .form-home input[class="btn-enviar"]:focus {
+          box-shadow: 200px 0 0 #93c95b inset; }
+  /* line 299, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
   .container-full-2 #canvas_maps {
     width: 100%;
     opacity: .2; }
-    /* line 244, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+    /* line 302, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
     .container-full-2 #canvas_maps #map {
       height: 100vh;
       width: 100%; }
 
-/* line 250, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+/* line 316, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
 .scrolloff {
   pointer-events: none; }
+
+/* line 319, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+*::-webkit-input-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 322, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+:-moz-input-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 325, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+:-moz-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 328, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+::-moz-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 331, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+:-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 334, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+::-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
