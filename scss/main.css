@@ -213,19 +213,20 @@
           background-color: #282828;
           margin-top: -65px;
           margin-left: 300px;
-          padding: 0 20px;
+          padding: 0 10px;
           font-size: .9em;
           border-radius: 5px;
           width: 100%;
-          max-width: 230px;
+          max-width: 140px;
+          text-align: center;
           display: none; }
-          /* line 230, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+          /* line 231, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
           .container-full-2 .contenido-form .cont-der .form-home .errores p, .container-full-2 .contenido-form .cont-der .form-home .errores-commit p {
             text-align: left;
             line-height: 35px;
             color: white;
             font-weight: bold; }
-        /* line 237, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        /* line 238, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
         .container-full-2 .contenido-form .cont-der .form-home .errores:before, .container-full-2 .contenido-form .cont-der .form-home .errores-commit:before {
           content: "";
           border-color: transparent #282828 transparent transparent;
@@ -235,10 +236,10 @@
           position: absolute;
           top: -webkit-calc(50% - 5px);
           top: calc(50% - 5px); }
-        /* line 247, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        /* line 248, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
         .container-full-2 .contenido-form .cont-der .form-home .errores-commit {
           bottom: 125px; }
-        /* line 251, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        /* line 252, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
         .container-full-2 .contenido-form .cont-der .form-home input[class="campo"], .container-full-2 .contenido-form .cont-der .form-home textarea[class="campo-commit"] {
           width: 100%;
           outline: none;
@@ -250,18 +251,18 @@
           box-shadow: 0 1px 0 #dddddd;
           position: relative;
           transition: all .4s ease-in-out; }
-        /* line 263, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        /* line 264, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
         .container-full-2 .contenido-form .cont-der .form-home input[class="campo"]:hover, .container-full-2 .contenido-form .cont-der .form-home textarea[class="campo-commit"]:hover, .container-full-2 .contenido-form .cont-der .form-home input[class="campo"]:focus, .container-full-2 .contenido-form .cont-der .form-home textarea[class="campo-commit"]:focus {
           box-shadow: 0 1px 0 #93c95b;
           padding-left: 10px; }
-        /* line 268, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        /* line 269, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
         .container-full-2 .contenido-form .cont-der .form-home textarea[class="campo-commit"] {
           line-height: normal;
           max-width: 100%;
           min-width: 100%;
           min-height: 60px;
           max-height: 250px; }
-        /* line 276, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        /* line 277, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
         .container-full-2 .contenido-form .cont-der .form-home input[class="btn-enviar"] {
           border: none;
           outline: none;
@@ -279,43 +280,50 @@
           box-shadow: 0 0 0 transparent inset;
           width: 50%;
           text-align: center; }
-        /* line 294, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+        /* line 295, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
         .container-full-2 .contenido-form .cont-der .form-home input[class="btn-enviar"]:hover, .container-full-2 .contenido-form .cont-der .form-home input[class="btn-enviar"]:focus {
           box-shadow: 200px 0 0 #93c95b inset; }
-  /* line 301, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+  /* line 302, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
   .container-full-2 #canvas_maps {
     width: 100%;
     opacity: .2; }
-    /* line 304, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+    /* line 305, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
     .container-full-2 #canvas_maps #map {
       height: 100vh;
       width: 100%; }
 
-/* line 318, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+/* line 313, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+footer {
+  width: 100%;
+  background-color: #282828;
+  color: #777;
+  padding: 100px 20px; }
+
+/* line 327, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
 .scrolloff {
   pointer-events: none; }
 
-/* line 321, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+/* line 330, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
 *::-webkit-input-placeholder {
   color: rgba(102, 102, 102, 0.5); }
 
-/* line 324, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+/* line 333, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
 :-moz-input-placeholder {
   color: rgba(102, 102, 102, 0.5); }
 
-/* line 327, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+/* line 336, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
 :-moz-placeholder {
   color: rgba(102, 102, 102, 0.5); }
 
-/* line 330, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+/* line 339, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
 ::-moz-placeholder {
   color: rgba(102, 102, 102, 0.5); }
 
-/* line 333, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+/* line 342, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
 :-ms-input-placeholder {
   color: rgba(102, 102, 102, 0.5); }
 
-/* line 336, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
+/* line 345, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_home.scss */
 ::-ms-input-placeholder {
   color: rgba(102, 102, 102, 0.5); }
 

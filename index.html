@@ -108,12 +108,12 @@
                     <p>Ver Currículum</p>
                     </a>
 
-                    <a class="btn" href="#">
+                    <a class="btn" href="download/Portafolio-Digital-Cesar-Aviles.pdf" target="_blank">
                        <img class="iconos" src="img/iconos/brochure.svg" alt="Icon Brochure">
                        <p>Ver Brochure</p>
                     </a>
 
-                    <a class="btn" href="#">
+                    <a class="down btn" href="#abajo">
                         <img class="iconos" src="img/iconos/coffe.svg" alt="Icon Café">
                         <p>Un Café?</p>
                     </a>
@@ -129,9 +129,45 @@
         
     
      <!--Contacto--> 
-    <section class="container-full-2">
+    <section id="abajo" class="container-full-2">
       
        <!--formulario-->        
+       <section class="contenido-form">
+               <arcticle class="cont-izq">
+               <figure><img src="img/icon-trabajemos.svg" alt="Dypan Trabajemos"></figure>
+               </arcticle>
+               
+               <arcticle class="cont-der">
+                   <form name="myForm" action="enviar.php" method="post" id="myForm" class="form-home"  enctype="application/x-www-form-urlencoded" autocomplete="off">
+                     <input type="text" name="nombre" id="nombre" class="campo" maxlength="50" placeholder="Nombre y Apellido:"><br/>
+                         <div id="mensaje1" class="errores"><p>Campo Requerido</p></div>
+                         
+                     <input type="email" name="email" id="email" class="campo" maxlength="50" placeholder="Email:"><br/>
+                         <div id="mensaje2" class="errores"><p>Campo Requerido</p></div>
+                         
+                     <input type="text" name="ubicacion" id="ubicacion" class="campo" maxlength="100" placeholder="Ubicación:"><br/>
+                         <div id="mensaje3" class="errores"><p>Campo Requerido</p></div>
+                         
+                     <textarea type="text" name="mensaje" id="mensaje" class="campo-commit" placeholder="Mensaje:" rows="3" maxlength="250"></textarea><br/>
+                         <div id="mensaje4" class="errores-commit"><p>Campo Requerido</p></div>
+                         
+                     <input type="submit" name="btn-enviar" id="btn-enviar" class="btn-enviar" value="Enviar">
+                   </form>
+               </arcticle>
+       </section>
+       
+       <!--Mapa Google-->
+       <section id="canvas_maps">
+           <div id="map"></div>
+       </section>
+               
+    </section>
+    
+    
+    <!--Contacto Formulario prueba B
+    <section class="container-full-2">
+      
+              
        <section class="contenido-form">
                <arcticle class="cont-izq">
                <figure><img src="img/icon-trabajemos.svg" alt="Dypan Trabajemos"></figure>
@@ -156,25 +192,36 @@
                </arcticle>
        </section>
        
-       <!--Mapa Google-->
+       
        <section id="canvas_maps">
            <div id="map"></div>
        </section>
                
-    </section>
+    </section>-->
+    
+    <footer>
+        <div class="contacto">
+            <p>©2016 - 2017 Dypan | Todos los derechos reservados | Cesar Avilés - Frontend Designer | V. Los Heroes - Santiago de Chile | +569 9 3819 841</p>
+        </div>
+    </footer>
     
     
     
 <!--Javascript-->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<!-- Scroll Down -->
+<script src="js/scroll.js"></script>
+<!-- Paralax Cover-->
 <script src="js/paralax-home.js"></script>
-<script src="js/maps-google.js"></script>
 <!-- Google Maps Conexión API -->
+<script src="js/maps-google.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAjPo2lAJgm-_vUYhc8kzmYIygvwSfAnE&callback=initMap"
         async defer>
 </script>
-<!-- Validacion Formulario A -->
-<script src="js/validacion-form-b.js"></script>
+<!-- Validacion Formulario C -->
+<script src="js/validacion-form-c.js"></script>
+<!-- Ajax Abajo -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </body>
     
 </html>

@@ -221,11 +221,12 @@
                         background-color: $color-darken;
                         margin-top: -65px;
                         margin-left: 300px;
-                        padding: 0 20px;
+                        padding: 0 10px;
                         font-size: .9em;
                         border-radius: 5px;
                         width: 100%;
-                        max-width: 230px;
+                        max-width: 140px;
+                        text-align: center;
                         display: none;
                         & p {
                         text-align: left;
@@ -306,6 +307,14 @@
                 width: 100%;
               }
         }    
+}
+
+// FOOTER 
+footer {
+    width: $width;
+    background-color: $color-darken;
+    color: #777;
+    padding: 100px 20px;
 }
 
 
