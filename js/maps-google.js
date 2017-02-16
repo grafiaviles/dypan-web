@@ -8,7 +8,7 @@ function initMap() {
   // Icono personalizado
   var image = 'img/icon-google.png';
   var beachMarker = new google.maps.Marker({
-    position: {lat: -33.528634, lng: -70.7635},
+    position: {lat: -33.529634, lng: -70.7635},
     map: map,
     icon: image
   });

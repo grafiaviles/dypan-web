@@ -41,6 +41,17 @@
         border-left: 0;
         }
 }
+// Responsive Lineas
+@media screen and (max-width: 480px) {
+    .lines {
+        padding: 25px;
+	}
+}
+@media screen and (max-width: 320px) {
+    .lines {
+        display: none;
+	}
+}
 // CONTENIDO COVER 
 .content-cover {
 	width: $content-width-cover;
@@ -63,20 +74,25 @@
             color: $white;
             line-height: 20px;
         }
+            // Responsive Logotipo
+            @media screen and (max-width: 480px) {
+                & .welcome h2 {
+                    display: none;
+                }
+            }
         & .logotipo {
 	        display: flex;
             justify-content: center;
             align-items: center;
             margin-top: -100px;
             width: 100%;
-            
+
             & img.logo-mobile {
                 max-width: 200px;
                 width: 100%;
                 min-width: 200px;
                 position: relative;
                 vertical-align: middle;
-                margin-right: 20px;
                 display: none;
             }
             & img.logo-desktop {
@@ -87,6 +103,17 @@
                 vertical-align: middle;
                 margin-right: 20px;
             }
+                // Responsive Logotipo
+                @media screen and (max-width: 480px) {
+                    & img.logo-desktop {
+                        display: none;
+                    }
+                    & img.logo-mobile {
+                        display: block;
+                        max-width: 200px;
+                        min-width: 200px;
+                    }
+                }
             & p {
                 font-size: 20px;
                 letter-spacing: 5px;
@@ -95,6 +122,19 @@
                 position: relative;
                 margin-top: 25px;
                 text-align: left;
+            }
+                // Responsive Leyenda
+                @media screen and (max-width: 480px) {
+                    & p {
+                        text-align: center;
+                        font-size: 1em;
+                    }
+                }
+        }
+        // Responsive Container Logotipo
+        @media screen and (max-width: 480px) {
+            & .logotipo {
+                flex-direction: column;
             }
         }
         & .botones {
@@ -107,6 +147,7 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                position: relative;
                 & .btn {
                     width: 200px;
                     min-width: 200px;
@@ -117,6 +158,24 @@
                 & .btn:last-child{
                     margin-right: 0;
                 }
+                // Responsive Botones
+                @media screen and (max-width: 480px) {
+                    & .btn {
+                        min-width: 100px;
+                        width: 100px;
+                        margin-right: 0;
+                    }
+                    & .btn:nth-child(2) {
+                        margin-right: 0;
+                    }                    
+                    & .btn p {
+                        background-color: $color-full;
+                        color: white;
+                        display: none;
+                    }
+
+                 }
+            
                 & .iconos {
                     background-color: white;
                     padding: 10px;
@@ -135,6 +194,33 @@
                     transform: translateY(-20px);
                     box-shadow: 0 10px 30px 0 rgba(0,0,0,.05);
                 }
+                @media screen and (max-width: 480px) {
+                    & .iconos {
+	                    opacity: 1;
+                        width: 60px;
+                        min-width: 60px;
+                        left: -webkit-calc(50% - 30px);
+                        top: -webkit-calc(50% - 30px);
+                        left: calc(50% - 30px);
+                        top: calc(50% - 30px);
+                        margin-bottom: 0;
+                        transform: translateY(0);
+                    }
+                    & .iconos:active, & .iconos:focus {
+                        transform: scale(1.2);
+                        box-shadow: 0 10px 30px 0 rgba(0,0,0,.09);
+                    }
+                    & .iconos:after {
+                        content: "hola";
+                        position: absolute;
+                        width: 100px;
+                        height: 100px;
+                        background-color: firebrick;
+                        z-index: 100;
+                    }
+                    
+                }
+
                 & p {
                     color: $color-full;
                     background-color: white;
@@ -165,11 +251,15 @@
                 }
             }
         }
+        @media screen and (max-width: 480px) {
+            & .botones {
+	            margin-top: 0;
+                }
+        }
 }
 
+
                                         
-
-
 
 
 // CONTENIDO CONTACTO
@@ -212,8 +302,24 @@
                         width: 250px;
                         margin: auto;
                     }
+                    @media screen and (max-width: 480px) {
+                        & img {
+                            width: 190px;        
+                        }
+                    }
                 }
+                    @media screen and (max-width: 480px) {
+                        & figure {
+                            padding: 2em;       
+                        }
+                    }
+                
             }
+                @media screen and (max-width: 480px) {
+                    & .cont-izq {
+                        width: 100%;
+                    }
+                }
             // FORMULARIO
             & .cont-der {
                 @extend .cont-izq;
@@ -272,8 +378,16 @@
                         position: relative;
                         transition: all .4s ease-in-out;
                     }
+                    @media screen and (max-width: 480px) {
+                        & input[class="campo"] {
+                            margin-bottom: 1.2em;
+                            box-shadow: none;
+                            border-bottom: 1px solid #dddddd;
+                            border-radius: 0;
+                        }
+                    }
                     & input[class="campo"]:hover, & input[class="campo"]:focus {
-                        box-shadow: 0 1px 0 $color-cool;
+                        border-bottom: 1px solid $color-cool;
                         padding-left: 10px;
                         
                     }
@@ -306,19 +420,57 @@
                     & input[class="btn-enviar"]:hover, & input[class="btn-enviar"]:focus {
                         box-shadow: 200px 0 0 $color-cool inset;
                     }
+                    @media screen and (max-width: 480px) {
+                        & input[class="btn-enviar"] {
+                            width: 100%;
+                        }
+                    & input[class="btn-enviar"]:active,
+                        & input[class="btn-enviar"]:focus,
+                        & input[class="btn-enviar"]:hover {
+                        box-shadow: 300px 0 0 $color-cool inset;
+                    }
+                    }
   
                 }
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .contenido-form {
+                left: calc(50% - 50%);
+                left: -webkit-calc(50% - 50%);
+                height: auto;
+                width: 100%;
+                position: relative;
+                justify-content: space-between;
+                overflow: hidden;
+                flex-wrap: wrap;
             }
         }
         & #canvas_maps {
             width: 100%;
             opacity: .2;
+            position: relative;
             & #map {
                 height: 100vh;
                 width: 100%;
               }
-        }    
+                @media screen and (max-width: 480px) {
+                    & #map {
+                        height: 300px;
+                      }
+                }
+        }
 }
+
+        @media screen and (max-width: 480px) {
+            & .container-full-2 {
+	            min-height: auto;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                }
+        }
 
 // FOOTER 
 footer {
@@ -337,6 +489,11 @@ footer {
 // Otros
 .scrolloff {
 pointer-events: none;
+}
+@media screen and (max-width: 480px) {
+    .scrolloff {
+    pointer-events: auto;
+    }  
 }
 *::-webkit-input-placeholder {
     color: rgba(102, 102, 102, 0.5);
