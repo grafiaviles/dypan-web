@@ -18,6 +18,7 @@
     
     <!-- Estilos -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     
     <!--Theme Color Android -->
@@ -101,17 +102,17 @@
             <article class="item-cover botones">
                <div class="item-btn">
                    
-                    <a class="btn" href="download/CV-2017-Cesar-Aviles-Cuevas.pdf" target="_blank">
+                    <a class="btn wow bounceInUp" data-wow-delay="0.4s" href="download/CV-2017-Cesar-Aviles-Cuevas.pdf" target="_blank">
                     <img class="iconos" src="img/iconos/cv.svg" alt="Icon Curriculum">
                     <p>Ver Currículum</p>
                     </a>
 
-                    <a class="btn" href="download/Portafolio-Digital-Cesar-Aviles.pdf" target="_blank">
+                    <a class="btn wow bounceInUp" data-wow-delay="0.6s" href="download/Portafolio-Digital-Cesar-Aviles.pdf" target="_blank">
                        <img class="iconos" src="img/iconos/brochure.svg" alt="Icon Brochure">
                        <p>Ver Brochure</p>
                     </a>
 
-                    <a class="down btn" href="#abajo">
+                    <a class="down btn wow bounceInUp" data-wow-delay="0.8s" href="#abajo">
                         <img class="iconos" src="img/iconos/coffe.svg" alt="Icon Café">
                         <p>Un Café?</p>
                     </a>
@@ -208,6 +209,10 @@
     
 <!--Javascript-->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<!-- Ajax -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Cargador -->
+<script src="js/load.js"></script>
 <!-- Scroll Down -->
 <script src="js/scroll.js"></script>
 <!-- Paralax Cover-->
@@ -219,13 +224,10 @@
 </script>
 <!-- Validacion Formulario C -->
 <script src="js/validacion-form-c.js"></script>
-<!-- Ajax Abajo -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
-    $(window).load(function() {
-        $('#preloader').fadeOut('slow');
-        $('body').css({'overflow':'visible'});
-    })
+<!-- Animacion -->
+<script src="js/wow.min.js"></script>
+<script>	
+  new WOW().init();    
 </script>
 </body>
     
