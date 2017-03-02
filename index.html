@@ -18,7 +18,6 @@
     
     <!-- Estilos -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     
     <!--Theme Color Android -->
@@ -102,31 +101,30 @@
             <article class="item-cover botones">
                <div class="item-btn">
                    
-                    <a class="btn wow bounceInUp" data-wow-delay="0.4s" href="download/CV-2017-Cesar-Aviles-Cuevas.pdf" target="_blank">
+                <a href="download/CV-2017-Cesar-Aviles-Cuevas.pdf" class="btn wow bounceInUp" data-wow-delay="0.4s" target="_blank">
+                    <img class="iconos icon-white" src="img/iconos/cv2.svg" alt="Icon Curriculum">
                     <img class="iconos" src="img/iconos/cv.svg" alt="Icon Curriculum">
                     <p>Ver Currículum</p>
-                    </a>
+                </a>
 
-                    <a class="btn wow bounceInUp" data-wow-delay="0.6s" href="download/Portafolio-Digital-Cesar-Aviles.pdf" target="_blank">
-                       <img class="iconos" src="img/iconos/brochure.svg" alt="Icon Brochure">
-                       <p>Ver Brochure</p>
-                    </a>
+                <a href="download/Portafolio-Digital-Cesar-Aviles.pdf" class="btn wow bounceInUp" data-wow-delay="0.6s" target="_blank">
+                    <img class="iconos icon-white" src="img/iconos/brochure2.svg" alt="Icon Brochure">
+                    <img class="iconos" src="img/iconos/brochure.svg" alt="Icon Brochure">
+                    <p>Ver Brochure</p>
+                </a>
 
-                    <a class="down btn wow bounceInUp" data-wow-delay="0.8s" href="#abajo">
-                        <img class="iconos" src="img/iconos/coffe.svg" alt="Icon Café">
-                        <p>Un Café?</p>
-                    </a>
+                <a href="#abajo" class="btn wow bounceInUp" data-wow-delay="0.8s">
+                    <img class="iconos icon-white" src="img/iconos/coffe2.svg" alt="Icon coffee">
+                    <img class="iconos" src="img/iconos/coffe.svg" alt="Icon Café">
+                    <p>Un Café?</p>
+                </a>
                </div>
             </article>
         </section>
         <!--Contenido-->
     </section>
                 
-   
-      
-       
-                   
-        
+
     
      <!--Contacto--> 
     <section id="abajo" class="container-full-2">
@@ -139,19 +137,28 @@
                
                <arcticle class="cont-der">
                    <form name="myForm" action="enviar.php" method="post" id="myForm" class="form-home"  enctype="application/x-www-form-urlencoded" autocomplete="off">
-                     <input type="text" name="nombre" id="nombre" class="campo" maxlength="50" placeholder="Nombre y Apellido:"><br/>
-                         <div id="mensaje1" class="errores"><p>Campo Requerido</p></div>
-                         
-                     <input type="email" name="email" id="email" class="campo" maxlength="50" placeholder="Email:"><br/>
-                         <div id="mensaje2" class="errores"><p>Campo Requerido</p></div>
-                         
-                     <input type="text" name="ubicacion" id="ubicacion" class="campo" maxlength="100" placeholder="Ubicación:"><br/>
-                         <div id="mensaje3" class="errores"><p>Campo Requerido</p></div>
-                         
-                     <textarea type="text" name="mensaje" id="mensaje" class="campo-commit" placeholder="Mensaje:" rows="3" maxlength="250"></textarea><br/>
-                         <div id="mensaje4" class="errores-commit"><p>Campo Requerido</p></div>
-                         
-                     <input type="submit" name="btn-enviar" id="btn-enviar" class="btn-enviar" value="Enviar">
+                        <div class="cont-campos">
+                             <input type="text" name="nombre" id="nombre" class="campo" maxlength="50" placeholder="Nombre y Apellido:">
+                             <div id="mensaje1" class="errores"><p>Nombre y Apellido Requerido</p></div>
+                        </div>
+
+                        <div class="cont-campos">
+                             <input type="email" name="email" id="email" class="campo" maxlength="50" placeholder="Email:">
+                             <div id="mensaje2" class="errores"><p>Email Requerido</p></div>
+                        </div>
+
+                        <div class="cont-campos">
+                             <input type="text" name="ubicacion" id="ubicacion" class="campo" maxlength="100" placeholder="Ubicación:">
+                             <div id="mensaje3" class="errores"><p>Ubicación Requerida</p></div>
+                        </div>
+
+                        <div class="cont-campos">
+                             <textarea type="text" name="mensaje" id="mensaje" class="campo-commit" placeholder="Mensaje:" rows="3" maxlength="250"></textarea>
+                             <div id="mensaje4" class="errores"><p>Mensaje Requerido</p></div>
+                        </div>
+                        <div class="cont-campos">
+                         <input type="submit" name="btn-enviar" id="btn-enviar" class="btn-enviar" value="Enviar">
+                        </div>
                    </form>
                </arcticle>
        </section>
@@ -209,6 +216,9 @@
     
 <!--Javascript-->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script>
+    
+</script>
 <!-- Ajax -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <!-- Cargador -->
@@ -229,6 +239,7 @@
 <script>	
   new WOW().init();    
 </script>
+
 </body>
     
 </html>
