@@ -46,6 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 -100px 250px rgba(0,0,0,0.2) inset;
 }
 @media screen and (max-width: 480px) {
     .container-full {
@@ -164,7 +165,7 @@
         }
         // Redes Sociales
         & .social-media {
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: space-around;
             flex: auto;
