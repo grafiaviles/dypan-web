@@ -7,7 +7,8 @@
  *    IE on Windows Phone and in iOS.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700');
 
 /* Document
    ========================================================================== */
@@ -112,6 +113,7 @@ pre {
  */
 
 a {
+  transition: all .6s ease;
   background-color: transparent; /* 1 */
   text-decoration-skip: objects; /* 2 */
   text-decoration: none;
@@ -246,6 +248,7 @@ audio:not([controls]) {
 
 img {
   border-style: none;
+  width: 100%;
 }
 
 /**
@@ -493,7 +496,7 @@ color: white;
     width: 5px;
 }
 ::-webkit-scrollbar-track {
-    background-color: $color-cool;
+    background-color: $color-darken;
 }
 ::-webkit-scrollbar-thumb {
     background-color: $color-full;
