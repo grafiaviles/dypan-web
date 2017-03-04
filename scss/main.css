@@ -1,203 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700");
-/* line 2, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-.title-cont {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  min-width: 300px;
-  font-size: 1.5em; }
-  /* line 9, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .title-cont .icon-title {
-    width: 60px;
-    align-self: flex-start;
-    margin-right: 1em; }
-  /* line 15, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .title-cont .title-bold {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    letter-spacing: -4px;
-    color: #282828;
-    white-space: pre-line;
-    text-align: left;
-    margin: 0; }
-  /* line 24, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .title-cont .title-ligth {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    letter-spacing: -4px;
-    color: #282828;
-    top: -32.5px;
-    position: relative; }
-
-/* line 35, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-.container-full {
-  width: 100%;
-  background-image: url(../img/bg-icon.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  background-color: #93c95b;
-  min-height: 100vh;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-@media screen and (max-width: 480px) {
-  /* line 51, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .container-full {
-    background-image: url(../img/bg-icon-mobile-final.svg); } }
-
-/* line 57, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-.lines {
-  width: 100%;
-  min-height: 100vh;
-  background-color: transparent;
-  position: absolute;
-  top: calc(50% - 50%);
-  top: -webkit-calc(50% - 50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px; }
-  /* line 69, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .lines .line-izq, .lines .line-der {
-    min-height: 90vh;
-    width: 50px;
-    position: relative;
-    border-left: 1px white solid;
-    border-top: 1px white solid;
-    border-bottom: 1px white solid; }
-  /* line 77, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .lines .line-der {
-    border-right: 1px white solid;
-    border-left: 0; }
-
-@media screen and (max-width: 480px) {
-  /* line 85, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .lines {
-    padding: 25px; } }
-
-@media screen and (max-width: 320px) {
-  /* line 90, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .lines {
-    display: none; } }
-
-/* line 95, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-.content-cover {
-  width: 80%;
-  max-width: 1100px;
-  background-color: transparent;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  /* line 104, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .content-cover .logotipo {
-    background-color: transparent;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-basis: 100%;
-    background-color: beige; }
-    /* line 112, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-    .content-cover .logotipo img.logo-mobile {
-      max-width: 200px;
-      width: 100%;
-      min-width: 200px;
-      position: relative;
-      vertical-align: middle;
-      display: none; }
-    /* line 120, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-    .content-cover .logotipo img.logo-desktop {
-      max-width: 350px;
-      width: 100%;
-      min-width: 300px;
-      position: relative;
-      vertical-align: middle;
-      margin-right: 20px; }
-    @media screen and (max-width: 480px) {
-      /* line 130, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-      .content-cover .logotipo img.logo-desktop {
-        display: none; }
-      /* line 133, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-      .content-cover .logotipo img.logo-mobile {
-        display: block;
-        max-width: 200px;
-        min-width: 200px; } }
-    /* line 139, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-    .content-cover .logotipo p {
-      font-size: 1.1em;
-      letter-spacing: 3px;
-      color: white;
-      font-weight: 400;
-      position: relative;
-      margin-top: 25px;
-      text-align: left; }
-    @media screen and (max-width: 480px) {
-      /* line 150, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-      .content-cover .logotipo p {
-        text-align: center;
-        font-size: 1em; } }
-  @media screen and (max-width: 480px) {
-    /* line 158, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-    .content-cover .logotipo {
-      flex-direction: column; } }
-  /* line 162, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .content-cover .social-media {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: darkcyan;
-    flex-basis: 50%; }
-    /* line 168, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-    .content-cover .social-media .icon-social {
-      width: 30px;
-      position: relative; }
-
-/* line 183, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-.scrolloff {
-  pointer-events: none; }
-
-@media screen and (max-width: 480px) {
-  /* line 187, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-  .scrolloff {
-    pointer-events: auto; } }
-
-/* line 191, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-*::-webkit-input-placeholder {
-  color: rgba(102, 102, 102, 0.5); }
-
-/* line 194, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-:-moz-input-placeholder {
-  color: rgba(102, 102, 102, 0.5); }
-
-/* line 197, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-:-moz-placeholder {
-  color: rgba(102, 102, 102, 0.5); }
-
-/* line 200, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-::-moz-placeholder {
-  color: rgba(102, 102, 102, 0.5); }
-
-/* line 203, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-:-ms-input-placeholder {
-  color: rgba(102, 102, 102, 0.5); }
-
-/* line 206, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
-::-ms-input-placeholder {
-  color: rgba(102, 102, 102, 0.5); }
-
 /* line 1, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cargador.scss */
 .cont-pre {
   width: 100%;
   height: 100vh;
   position: fixed;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.2); }
+  background-color: transparent; }
 
 /* line 8, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cargador.scss */
 .spinner {
@@ -2701,6 +2510,308 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+/* line 2, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+.title-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  font-size: 1.5em; }
+  /* line 9, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .title-cont .icon-title {
+    width: 60px;
+    align-self: flex-start;
+    margin-right: 1em; }
+  /* line 15, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .title-cont .title-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -4px;
+    color: #282828;
+    white-space: pre-line;
+    text-align: left;
+    margin: 0; }
+  /* line 24, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .title-cont .title-ligth {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    letter-spacing: -4px;
+    color: #282828;
+    top: -32.5px;
+    position: relative; }
+
+/* line 35, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+.container-full {
+  width: 100%;
+  background-image: url(../img/bg-icon.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-color: #6ec35a;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media screen and (max-width: 480px) {
+  /* line 51, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .container-full {
+    background-image: url(../img/bg-icon-mobile-final.svg); } }
+
+/* line 57, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+.lines {
+  width: 100%;
+  min-height: 100vh;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 50%);
+  top: -webkit-calc(50% - 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  display: flex; }
+  /* line 70, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .lines .line-izq, .lines .line-der {
+    min-height: 90vh;
+    width: 50px;
+    position: relative;
+    border-left: 1px white solid;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid; }
+  /* line 78, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .lines .line-der {
+    border-right: 1px white solid;
+    border-left: 0; }
+
+@media screen and (max-width: 480px) {
+  /* line 86, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .lines {
+    padding: 25px; } }
+
+@media screen and (max-width: 320px) {
+  /* line 91, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .lines {
+    display: none; } }
+
+/* line 96, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+.content-cover {
+  width: 80%;
+  max-width: 1100px;
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: -100px; }
+  /* line 108, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .content-cover .logotipo {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 600px; }
+    /* line 115, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+    .content-cover .logotipo img.logo-mobile {
+      max-width: 200px;
+      width: 100%;
+      min-width: 200px;
+      position: relative;
+      vertical-align: middle;
+      display: none; }
+    /* line 123, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+    .content-cover .logotipo img.logo-desktop {
+      max-width: 380px;
+      min-width: 300px;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 20px; }
+    @media screen and (max-width: 480px) {
+      /* line 132, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .logotipo img.logo-desktop {
+        display: none; }
+      /* line 135, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .logotipo img.logo-mobile {
+        display: block;
+        max-width: 200px;
+        min-width: 200px; } }
+    /* line 141, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+    .content-cover .logotipo p {
+      font-size: 1.1em;
+      letter-spacing: 3px;
+      color: white;
+      font-weight: 400;
+      position: relative;
+      margin-top: 25px;
+      text-align: left; }
+    @media screen and (max-width: 480px) {
+      /* line 152, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .logotipo p {
+        text-align: center;
+        font-size: 1em; } }
+  @media screen and (max-width: 480px) {
+    /* line 160, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+    .content-cover .logotipo {
+      flex-direction: column;
+      width: 100%; } }
+  /* line 166, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .content-cover .cont-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    padding: 5px 0;
+    margin-top: 20px; }
+    /* line 173, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+    .content-cover .cont-menu .btn-menu {
+      display: block;
+      background-color: transparent;
+      transition: all .6s ease;
+      border-radius: 50%; }
+      /* line 178, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .cont-menu .btn-menu .icon-menu-cover {
+        padding: 30px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; }
+        /* line 185, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+        .content-cover .cont-menu .btn-menu .icon-menu-cover img.up, .content-cover .cont-menu .btn-menu .icon-menu-cover img.down {
+          width: 40px;
+          position: absolute;
+          left: calc(50% - 20px);
+          top: calc(50% - 20px);
+          left: -webkit-calc(50% - 20px);
+          top: -webkit-calc(50% - 20px);
+          transition: all .6s ease;
+          display: block;
+          opacity: 1; }
+        /* line 196, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+        .content-cover .cont-menu .btn-menu .icon-menu-cover img.down {
+          opacity: 0; }
+      /* line 202, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .cont-menu .btn-menu .icon-menu-cover:hover {
+        transform: rotateX(180deg); }
+      /* line 205, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .cont-menu .btn-menu .icon-menu-cover:active {
+        background-color: #282828; }
+      /* line 208, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .cont-menu .btn-menu .icon-menu-cover:hover img.up, .content-cover .cont-menu .btn-menu .icon-menu-cover:hover img.down {
+        opacity: 0; }
+      /* line 211, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .cont-menu .btn-menu .icon-menu-cover:hover img.down {
+        opacity: 1; }
+      /* line 214, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .cont-menu .btn-menu .icon-menu-cover:active {
+        border-radius: 50%; }
+      /* line 218, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .cont-menu .btn-menu .icon-active {
+        background-color: #5575f5;
+        opacity: 1;
+        transition: all .6s ease; }
+    /* line 224, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+    .content-cover .cont-menu .btn-menu:active, .content-cover .cont-menu .btn-menu:hover {
+      background-color: #5575f5;
+      box-shadow: 0 0 0 20px rgba(85, 117, 245, 0.1); }
+  @media screen and (max-width: 480px) {
+    /* line 230, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+    .content-cover .cont-menu {
+      width: 80%;
+      min-width: 280px;
+      justify-content: center; }
+      /* line 234, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+      .content-cover .cont-menu img {
+        width: 40px;
+        padding: 0; } }
+
+@media screen and (max-width: 480px) {
+  /* line 242, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .content-cover {
+    top: 0; } }
+
+/* line 248, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+.cont-nube {
+  background-image: url(../img/png/cloud.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 320px;
+  position: absolute;
+  bottom: -100px; }
+  /* line 257, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .cont-nube .nube-cover {
+    width: 130%;
+    position: absolute;
+    left: -webkit-calc(50% - 65%);
+    left: calc(50% - 65%);
+    opacity: .2;
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    bottom: 60px;
+    top: 0; }
+
+@media screen and (max-width: 480px) {
+  /* line 270, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .cont-nube {
+    background-image: none;
+    display: none; }
+    /* line 273, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+    .cont-nube .nube-cover {
+      display: none; } }
+
+/* line 279, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+.section1 {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 100px 0px; }
+
+/* line 298, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+.scrolloff {
+  pointer-events: none; }
+
+@media screen and (max-width: 480px) {
+  /* line 302, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+  .scrolloff {
+    pointer-events: auto; } }
+
+/* line 306, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+*::-webkit-input-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 309, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+:-moz-input-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 312, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+:-moz-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 315, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+::-moz-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 318, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+:-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
+/* line 321, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_cover.scss */
+::-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.5); }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -2807,6 +2918,7 @@ pre {
  */
 /* line 115, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 a {
+  transition: all .6s ease;
   background-color: transparent;
   /* 1 */
   text-decoration-skip: objects;
@@ -2817,12 +2929,12 @@ a {
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
-/* line 126, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 127, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 a:active,
 a:hover {
   outline-width: 0; }
 
-/* line 131, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 132, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 p {
   margin: 0;
   padding: 0; }
@@ -2831,7 +2943,7 @@ p {
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 141, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 142, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -2843,7 +2955,7 @@ abbr[title] {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-/* line 151, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 152, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 b,
 strong {
   font-weight: inherit; }
@@ -2851,7 +2963,7 @@ strong {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 160, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 161, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 b,
 strong {
   font-weight: bolder; }
@@ -2860,7 +2972,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 170, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 171, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 code,
 kbd,
 samp {
@@ -2872,14 +2984,14 @@ samp {
 /**
  * Add the correct font style in Android 4.3-.
  */
-/* line 181, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 182, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 dfn {
   font-style: italic; }
 
 /**
  * Add the correct background and color in IE 9-.
  */
-/* line 189, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 190, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 mark {
   background-color: #5575f5;
   color: white; }
@@ -2887,7 +2999,7 @@ mark {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 198, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 199, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 small {
   font-size: 80%; }
 
@@ -2895,7 +3007,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 207, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 208, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 sub,
 sup {
   font-size: 75%;
@@ -2903,11 +3015,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 215, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 216, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 219, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 220, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 sup {
   top: -0.5em; }
 
@@ -2916,7 +3028,7 @@ sup {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 230, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 231, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 audio,
 video {
   display: inline-block; }
@@ -2924,7 +3036,7 @@ video {
 /**
  * Add the correct display in iOS 4-7.
  */
-/* line 239, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 240, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -2932,7 +3044,7 @@ audio:not([controls]) {
 /**
  * Remove the border on images inside links in IE 10-.
  */
-/* line 248, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 249, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 img {
   border-style: none;
   width: 100%; }
@@ -2940,7 +3052,7 @@ img {
 /**
  * Hide the overflow in IE.
  */
-/* line 257, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 258, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -2950,7 +3062,7 @@ svg:not(:root) {
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 269, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 270, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 button,
 input,
 optgroup,
@@ -2969,7 +3081,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 285, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 286, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 button,
 input {
   /* 1 */
@@ -2979,7 +3091,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 295, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 296, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 button,
 select {
   /* 1 */
@@ -2990,7 +3102,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 306, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 307, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 button,
 html [type="button"],
 [type="reset"],
@@ -3001,7 +3113,7 @@ html [type="button"],
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 317, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 318, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -3012,7 +3124,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 329, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 330, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -3022,7 +3134,7 @@ button:-moz-focusring,
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-/* line 340, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 341, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -3034,7 +3146,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 353, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 354, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -3053,7 +3165,7 @@ legend {
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 367, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 368, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 progress {
   display: inline-block;
   /* 1 */
@@ -3063,7 +3175,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE.
  */
-/* line 376, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 377, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 textarea {
   overflow: auto; }
 
@@ -3071,7 +3183,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-/* line 385, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 386, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -3082,7 +3194,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 395, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 396, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -3091,7 +3203,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 405, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 406, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -3101,7 +3213,7 @@ textarea {
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
-/* line 414, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 415, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -3110,7 +3222,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 424, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 425, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -3123,7 +3235,7 @@ textarea {
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
-/* line 437, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 438, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 details,
 menu {
   display: block; }
@@ -3131,7 +3243,7 @@ menu {
 /*
  * Add the correct display in all browsers.
  */
-/* line 446, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 447, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 summary {
   display: list-item; }
 
@@ -3140,14 +3252,14 @@ summary {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 457, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 458, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 canvas {
   display: inline-block; }
 
 /**
  * Add the correct display in IE.
  */
-/* line 465, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 466, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 template {
   display: none; }
 
@@ -3156,36 +3268,36 @@ template {
 /**
  * Add the correct display in IE 10-.
  */
-/* line 476, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 477, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 [hidden] {
   display: none; }
 
 /* Para Safari Selector */
-/* line 481, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 482, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 ::selection {
   background: #5575f5;
   color: white; }
 
 /* Para Firefox Selector */
-/* line 487, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 488, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 ::-moz-selection {
   background: #5575f5;
   color: white; }
 
 /* Scroll bar personalizado */
-/* line 494, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 495, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 ::-webkit-scrollbar {
   width: 5px; }
 
-/* line 497, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 498, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 ::-webkit-scrollbar-track {
-  background-color: #93c95b; }
+  background-color: #282828; }
 
-/* line 500, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 501, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 ::-webkit-scrollbar-thumb {
   background-color: #5575f5; }
 
-/* line 503, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
+/* line 504, /Applications/XAMPP/xamppfiles/htdocs/dypan-web/scss/_reset.scss */
 img {
   -webkit-user-select: none;
   -ms-user-select: none;

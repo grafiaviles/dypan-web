@@ -98,13 +98,44 @@
                 <img class="logo-desktop" src="img/logotipo-dypan.svg" alt="Logotipo Dypan">
                 <p><strong>César Avilés C.</strong><br>Frontend Designer</p>
             </a>
-            <!--Redes Sociales-->
-            <div class="social-media">
-                <a href="#" class="icon-social"><img src="img/iconos/facebook.svg" alt="Facebook"></a>
-                <a href="#" class="icon-social"><img src="img/iconos/instagram.svg" alt="Instagram"></a>
-                <a href="#" class="icon-social"><img src="img/iconos/github.svg" alt="Github"></a>
-                <a href="#" class="icon-social"><img src="img/iconos/twitter.svg" alt="Twitter"></a>
-                <a href="#" class="icon-social"><img src="img/iconos/linkedin.svg" alt="Linkedin"></a>
+            <!--Menu Iconos-->
+            <div class="cont-menu" id="cont-menu">
+              
+               <span class="btn-menu wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="#1" class="icon-menu-cover" id="icon-active">
+                        <img class="up" src="img/iconos/cv2.svg" alt="Bienvenido">
+                        <img class="down" src="img/iconos/arrow-down.svg" alt="Bienvenido">
+                    </a>
+               </span>               
+                   
+               <span class="btn-menu wow fadeInUp" data-wow-delay="0.4s">
+                    <a href="#2" class="icon-menu-cover" id="icon-active">
+                        <img class="up" src="img/iconos/brochure2.svg" alt="Bienvenido">
+                        <img class="down" src="img/iconos/arrow-down.svg" alt="Bienvenido">
+                    </a>
+               </span>
+               
+               <span class="btn-menu wow fadeInUp" data-wow-delay="0.6s">
+                    <a href="#3" class="icon-menu-cover" id="icon-active">
+                        <img class="up" src="img/iconos/gafas2.svg" alt="Bienvenido">
+                        <img class="down" src="img/iconos/arrow-down.svg" alt="Bienvenido">
+                    </a>
+               </span> 
+                
+               <span class="btn-menu wow fadeInUp" data-wow-delay="0.8s">
+                    <a href="#4" class="icon-menu-cover" id="icon-active">
+                        <img class="up" src="img/iconos/services2.svg" alt="Bienvenido">
+                        <img class="down" src="img/iconos/arrow-down.svg" alt="Bienvenido">
+                    </a>
+               </span>
+               
+               <span class="btn-menu wow fadeInUp" data-wow-delay="1s">
+                    <a href="#5" class="icon-menu-cover" id="icon-active">
+                        <img class="up" src="img/iconos/coffe2.svg" alt="Bienvenido">
+                        <img class="down" src="img/iconos/arrow-down.svg" alt="Bienvenido">
+                    </a>
+               </span>
+
             </div>
         </section>
         <!--Contenido-->
@@ -114,21 +145,64 @@
     <img class="nube-cover" src="img/png/cloud.png" alt="">
     </div>
     
-    <section class="section1"></section>
+    <section class="section1" id="1">
+        <!--Titulos-->
+        <div class="title-cont">
+        <img class="icon-title" src="img/iconos/brochure.svg">
+        <h1 class="title-bold">Lo que mejor
+        <span class="title-ligth">se hacer</span></h1>
+        </div>
+    </section>
+               
+    <section class="section1" id="2">
+        <!--Titulos-->
+        <div class="title-cont">
+        <img class="icon-title" src="img/iconos/brochure.svg">
+        <h1 class="title-bold">Lo que mejor
+        <span class="title-ligth">se hacer</span></h1>
+        </div>
+    </section>
                 
-                <!--Titulos-->
-                <div class="title-cont">
-                <img class="icon-title" src="img/iconos/brochure.svg">
-                <h1 class="title-bold">Lo que mejor
-                <span class="title-ligth">se hacer</span></h1>
-                </div>
+    <section class="section1" id="3">
+        <!--Titulos-->
+        <div class="title-cont">
+        <img class="icon-title" src="img/iconos/brochure.svg">
+        <h1 class="title-bold">Lo que mejor
+        <span class="title-ligth">se hacer</span></h1>
+        </div>
+    </section>
         
+    <section class="section1" id="4">
+        <!--Titulos-->
+        <div class="title-cont">
+        <img class="icon-title" src="img/iconos/brochure.svg">
+        <h1 class="title-bold">Lo que mejor
+        <span class="title-ligth">se hacer</span></h1>
+        </div>
+    </section>
+    
+    <section class="section1" id="5">
+        <!--Titulos-->
+        <div class="title-cont">
+        <img class="icon-title" src="img/iconos/brochure.svg">
+        <h1 class="title-bold">Lo que mejor
+        <span class="title-ligth">se hacer</span></h1>
+        </div>
+    </section>
     
 <!--Javascript-->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script>
-    
-</script>
+
+<!--<script>
+    var $iconMenuCover = $(".icon-menu-cover");
+
+    $("#cont-menu").on('click', 'a', function(){
+        $iconMenuCover.removeClass("icon-active").addClass($(this).attr('id'));
+        $(this).addClass("icon-active");
+        $(this).siblings().removeClass("icon-active");
+    });
+</script>-->
+
 <!-- Ajax -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <!-- Cargador -->
